@@ -191,7 +191,7 @@ logger.error = (msg, options) => {
 
 export default defineConfig({
 	plugins: [react()],
-  	base: '/MoodTrack/', 
+  	base: '/', 
 
 	customLogger: logger,
 	plugins: [
