@@ -190,6 +190,9 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+	plugins: [react()],
+  	base: '/MoodTrack/', 
+
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
